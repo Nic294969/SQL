@@ -1,1 +1,18 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, color TEXT, price INTEGER, quantity INTEGER, size INTEGER);
 
+INSERT INTO store VALUES(1,"shirts", "blue",12 ,50 ,"s, m, l");
+INSERT INTO store VALUES(2,"leggings", "red",10, 00, "s, m, l");
+INSERT INTO store VALUES(3,"jeans", "black", 20, 00, "s, m, l");
+ INSERT INTO store VALUES(4,"skirts", "purple", 13, 99, "s, m, l"); 
+ INSERT INTO store VALUES(5,"blouse", "pink", 8, 00, "s, m, l");
+INSERT INTO store VALUES(6,"sweatpants", "orange", 78, 00, "s, m, l");
+INSERT INTO store VALUES(7,"dresses", "green", 45, 00, "s, m, l");
+INSERT INTO store VALUES(8,"shoes", "white", 55, 00, "s, m, l"); 
+INSERT INTO store VALUES(9, "trousers", "brown", 15, 81, "s, m, l");
+INSERT INTO store VALUES(10, "heels", "yellow", 14, 99, "s, m, l");
+
+
+
+SELECT * FROM store ORDER BY PRICE;
+SELECT SUM (PRICE) FROM store; 
+SELECT *FROM store WHERE PRICE < 7 ORDER BY PRICE; 
